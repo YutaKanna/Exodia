@@ -1,9 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
-        nuxt
+        あなたは？
       </h1>
       <div class="links">
         <a
@@ -12,15 +11,15 @@
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
+          絵が上手い人
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://nuxtjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="button--green"
         >
-          GitHub
+          絵が下手な人
         </a>
       </div>
     </div>
