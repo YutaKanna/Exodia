@@ -35,6 +35,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/firebase',
   ],
   /*
   ** Auto import components
@@ -46,7 +47,6 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
   ],
   /*
   ** Nuxt.js modules
