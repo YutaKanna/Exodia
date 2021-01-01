@@ -1,27 +1,18 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        あなたは？
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          絵が上手い人
-        </a>
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          絵が下手な人
-        </a>
-      </div>
+  <div>
+    <header class="header-3">
+        <div class="header-inner">
+            <div class="logo">
+              Exodia
+            </div>
+            <nav class="header-nav">
+                <div class="header-nav-item">
+                    <a class="header-button header-post">投稿する</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
     </div>
   </div>
 </template>
@@ -73,5 +64,91 @@ export default {}
 
 .links {
   padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  height: 60px;
+  padding: 0 0.8em;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.header-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-login {
+  color: #999;
+}
+
+.header-post {
+  font-weight: bold;
+  color: #fff;
+  background: #00b5ad;
+  border: 1px #00b5ad solid;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-post {
+    display: none;
+  }
 }
 </style>
