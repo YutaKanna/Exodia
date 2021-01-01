@@ -1,8 +1,10 @@
 <template>
 　<div>
-　　 <div>
-        <img src="https://firebasestorage.googleapis.com/v0/b/good-bad-1f1f3.appspot.com/o/martin.png" alt="">
+　　 <div style="position:relative; height:500px; overflow: hidden;">
+        <img id="myimg" width="500" height="500" style="position:absolute; clip:rect(0px 500px 250px 0px);" src="">
+        <img id="myimg" width="500" height="500" style="position: absolute; clip: rect(250px, 500px, 500px, 0px);" src="">
     </div>
+    <div @click="hogehoge">FOO</div>
   </div>
 </template>
 
@@ -13,12 +15,33 @@ import 'firebase/storage';
 export default {
   data () {
     return {
-      name: '',
+      downRef: ''
     }
   },
-  async asyncData({ params }) {
-    var storage = firebase.storage();
-    var pathReference = storage.ref('martin.png');
-    console.log(pathReference);
+  methods: {
+    hogehoge () {
+        var storage = firebase.storage();
+        var httpsReference = storage.ref('martin.png');
+
+        const storageRef = storage.ref();
+        storageRef.child('martin.png').getDownloadURL().then(function(url) {
+
+            // This can be downloaded directly:
+            var xhr = new XMLHttpRequest();
+            xhr.responseType = 'blob';
+            xhr.onload = function(event) {
+                var blob = xhr.response;
+            };
+            xhr.open('GET', url);
+            xhr.send();
+
+            // Or inserted into an <img> element:
+            var img = document.getElementById('myimg');
+            img.src = url;
+            }).catch(function(error) {
+            // Handle any errors
+        });
+    }
   }
 }
+</script>
