@@ -9,7 +9,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.4",
     "firebase": "^8.0.1",
+    "firebase-admin": "^9.4.2",
     "node": "^10.10.0",
     "nuxt": "^2.14.0"
   },

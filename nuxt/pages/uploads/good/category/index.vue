@@ -14,21 +14,12 @@
     </header>
     <div class="container">
         <div style="padding-bottom: 140px">
-            <h1 class="title">
-                あなたは？
-            </h1>
             <div class="links">
                 <a
-                href="/uploads/bad/category"
+                href="/uploads/good-new"
                 class="button--green"
                 >
-                絵が下手な人
-                </a>
-                <a
-                href="/uploads/good/category"
-                class="button--green"
-                >
-                絵が上手い人
+                ドラえもん
                 </a>
             </div>
         </div>
