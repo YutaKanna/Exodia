@@ -1,5 +1,5 @@
 <template>
-  <form enctype='multipart/form-data'>
+  <form>
     <input @change="selectIcon" type="file">
     <button type="submit">submit</button>
   </form>
@@ -14,7 +14,9 @@ export default {
   data() {
     return {
       imageName: '',
-      imageURL: ''
+      imageURL: '',
+      category: 1,
+      good: false,
     }
   },
   methods: {
@@ -28,6 +30,8 @@ export default {
         var docDataImages = {
             imageName: file.name,
             imageURL: imageURL,
+            category: 1,
+            good: false
         };
         var db = firebase.firestore()
         db.collection('images').add(docDataImages)

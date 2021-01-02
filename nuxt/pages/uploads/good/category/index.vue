@@ -13,6 +13,16 @@
         </div>
     </header>
     <div class="container">
+        <div style="padding-bottom: 140px">
+            <div class="links">
+                <a
+                href="/uploads/good-new"
+                class="button--green"
+                >
+                ドラえもん
+                </a>
+            </div>
+        </div>
     </div>
   </div>
 </template>

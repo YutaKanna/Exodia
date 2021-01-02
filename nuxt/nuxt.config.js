@@ -52,7 +52,12 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
+  axios: {
+    proxy: true,
+    baseURL: 'https://good-bad-1f1f3.firebaseio.com'
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
