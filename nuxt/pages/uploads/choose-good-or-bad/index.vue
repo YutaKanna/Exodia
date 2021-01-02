@@ -13,6 +13,29 @@
         </div>
     </header>
     <div class="container">
+        <div style="padding-bottom: 140px">
+            <h1 class="title">
+                あなたは？
+            </h1>
+            <div class="links">
+                <a
+                href="https://nuxtjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button--green"
+                >
+                絵が下手な人
+                </a>
+                <a
+                href="https://nuxtjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button--green"
+                >
+                絵が上手い人
+                </a>
+            </div>
+        </div>
     </div>
   </div>
 </template>
